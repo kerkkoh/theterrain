@@ -3,6 +3,8 @@ The Terrain
 
 A site made for an Arma 3 modding community. Simply put it's a dumbed down social network. Right now the functionality isn't finished so it's more of a demo than anything else.
 
+You can see the working demo over at [glitch](https://theterrain.glitch.me/), where it's hosted in its full capacity.
+
 Frontend done in:
 - JQuery
 - Bootstrap 4.0
@@ -24,5 +26,3 @@ What's implemented:
 - Working news articles & tutorials + loading them from the database in the correct order
 - Handlebars helpers for setting different tabs active
 - Submitting new tutorials when you're registered (this needs its own captcha, though)
-
-You can see the working example over at [glitch](https://theterrain.glitch.me/), where it's hosted in its full capacity.
