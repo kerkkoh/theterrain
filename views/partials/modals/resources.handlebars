@@ -1,0 +1,28 @@
+    <div class="modal fade" id="modalresources" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body head-login"><h1 class="text-center resetpadmarg">Submit a resource</h1></div>
+          <div class="modal-body main-login">
+            <form action="resources" method="post" role="form">
+              <div class="form-group">
+                <label for="resources-path">URL Path to your resource</label>
+                <input type="text" class="form-control" id="resources-path" placeholder="URL Path to your resource" required>
+              </div>
+              <div class="form-group">
+                <label for="resources-name">Name for your resource</label>
+                <input type="text" class="form-control" id="resources-name" placeholder="Name for your resource" required>
+              </div>
+              <div class="form-group">
+                <label for="resources-description">Description for your resource</label>
+                <input type="text" class="form-control" id="resources-description" placeholder="Description for your resource" required>
+              </div>
+              <div class="form-group">
+                <label for="resources-originalauthor">The original author of this resource</label>
+                <input type="text" class="form-control" id="resources-originalauthor" placeholder="The original author of this resource" required>
+              </div>
+              <input class="btn btn-lg login-button" type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>

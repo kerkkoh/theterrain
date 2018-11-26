@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="fullformhtml">
+<!--
+##################################
+#### Copyright 2017 Kerkkoh   ####
+#### All rights reserved.     ####
+##################################
+
+Any form of use without author's permission is strictly forbidden.
+-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="'The number one place to go for Arma 3 Terrain editing tutorials, screenshots, resources and news.">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+    <body class="bg-transparent">
+    {{> utils/menu}}
+    <div class="container-fluid fullheight">
+      <div class="row formbackground align-items-center">
+        <div class="col-sm-12 col-md-12">
+          <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-7 col-lg-5">
+              {{{body}}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--cookies-->
+    <div class="modal fade" id="modalcookies" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog login-modal">
+          <div class="alert alert-info" role="alert">
+            <strong>Hey!</strong><br><br> The Terrain uses cookies for managing user sessions. We also use Google's analytics on our site. By continuing to use our site, you agree to these cookies being set on your browser.<br><br>Thank you!
+            <br><br><button class="btn btn-primary" href="#" type="submit" onclick="$('#modalcookies').modal('hide')">Close</button>
+          </div>
+        </div>
+    </div>
+    {{#if register}}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+    {{/if}}
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+    </body>
+</html>

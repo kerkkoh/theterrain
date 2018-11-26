@@ -1,0 +1,45 @@
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary blue-bg">
+      <a class="navbar-brand" href="/">The Terrain</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item {{active "index" @exphbs.view}}">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item {{active "news" @exphbs.view}}">
+            <a class="nav-link" href="/news">News</a>
+          </li>
+          <li class="nav-item {{active "tutorials" @exphbs.view}}">
+            <a class="nav-link" href="/tutorials">Tutorials</a>
+          </li>
+          <li class="nav-item {{active "resources" @exphbs.view}}">
+            <a class="nav-link" href="/resources">Resources</a>
+          </li>
+          <li class="nav-item {{active "screenshots" @exphbs.view}}">
+            <a class="nav-link" href="/screenshots">Screenshots</a>
+          </li>
+          <li class="nav-item dropdown {{activetwo "login" "register" @exphbs.view}}" {{#if data.loggedin}}hidden{{/if}}>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sign up
+            </a>
+            <div class="dropdown-menu blue-bg" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/login" id="login">Login</a>
+              <a class="dropdown-item" href="/register" id="register">Register</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Lost password?</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav my-2 my-lg-0" {{#unless data.loggedin}}hidden{{/unless}}>
+          <li class="nav-item">
+            <a class="nav-link {{active "profile" @exphbs.view}}" href="/profile/{{data.id}}">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>

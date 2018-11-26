@@ -1,0 +1,64 @@
+    {{> utils/menu}}
+    <div class="container-fluid">
+      {{> utils/promo}}
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="profileinfo">
+            <h4>{{profiledata.username}}</h4>
+            <img class="mb-1 img-fluid" src="{{profiledata.picture}}"><br>
+            <p>Profile views: {{{profiledata.profileviews}}}</p>
+            <p>Content count: 0</p>
+            <p>{{{profiledata.description}}}</p>
+          </div>
+          {{#if ownprofile}}
+            <div class="profileinfo">
+              <h4>Settings</h4>
+              <form id="updateProfile" role="form">
+                <div class="form-group">
+                  <label class="col-form-label" for="settings-description">Description</label>
+                  <input type="text" class="form-control" id="settings-description" value="{{profiledata.description}}">
+                </div>
+                <div class="form-group">
+                  <label class="col-form-label" for="settings-picture">Profile picture</label>
+                  <input type="text" class="form-control" id="settings-picture" value="{{profiledata.picture}}">
+                </div>
+                <input type="submit" class="btn login-button" value="Submit">
+              </form>
+            </div>
+          {{/if}}
+        </div>
+        <div class="col-sm-12 col-md-9">
+          <div class="row">
+            <div class="col-12 articletop">
+              <h3 class="articleheading">PboProject Basics</h3>
+              <p class="articlemetatext hidden-xs">Author: <a href="">moderator</a></p><br>
+              <p class="articlemetatext hidden-xs">Date: 2016-01-31</p>
+              <h5 class="articledesc">A tutorial explaining you why you should use PboProject instead of Addon Builder and how to use it.</h5>
+            </div>
+            <div class="col-12 articlemain">
+              <h3 class="articleheading">PboProject Basics</h3>
+              <p class="articlemetatext hidden-xs">Author: <a href="">moderator</a></p><br>
+              <p class="articlemetatext hidden-xs">Date: 2016-01-31</p>
+              <h5 class="articledesc">A tutorial explaining you why you should use PboProject instead of Addon Builder and how to use it.</h5>
+            </div>
+            <div class="col-12 articletop">
+              <h3 class="articleheading">PboProject Basics</h3>
+              <p class="articlemetatext hidden-xs">Author: <a href="">moderator</a></p><br>
+              <p class="articlemetatext hidden-xs">Date: 2016-01-31</p>
+              <h5 class="articledesc">A tutorial explaining you why you should use PboProject instead of Addon Builder and how to use it.</h5>
+            </div>
+            <div class="col-sm-12 col-md-4 panel-img-div">
+              <img class="panel-img" src="https://source.unsplash.com/mWRR1xj95hg" />
+              <p class="img-meta">Author: <a href="">moderator</a></p>
+            </div>
+            <div class="col-sm-12 col-md-4 panel-img-div">
+              <img class="panel-img" src="https://source.unsplash.com/T8gIOL3_sdI" />
+              <p class="img-meta">Author: <a href="">moderator</a></p>
+            </div>
+            <div class="col-sm-12 col-md-4 panel-img-div">
+              <img class="panel-img" src="https://source.unsplash.com/Ixp4YhCKZkI" />
+              <p class="img-meta">Author: <a href="">moderator</a></p>
+            </div>
+          </div>
+        </div>
+      </div>

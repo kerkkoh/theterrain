@@ -1,0 +1,24 @@
+<div class="modal-body head-login"><h1 class="text-center resetpadmarg">Register</h1></div>
+<div class="modal-body main-login">
+  <form id="reg" method="post" role="form">
+    <input id="register-username" type="text" class="form-control form-top" name="username" size="30" placeholder="Username" required>
+    <input id="register-password" type="password" class="form-control form-center" name="password" size="30" placeholder="Password" required>
+    <input id="register-email" type="email" class="form-control form-center" name="email" size="30" placeholder="Email" required>
+    <input id="register-description" type="text" class="form-control form-bottom" name="description" size="30" placeholder="Short Description" required>
+    <div class="g-recaptcha mb-3" data-sitekey="6LdBjzcUAAAAAGke9LPZps3hi8eUvv-yA5468Yma"></div>
+    <p>By registering, you agree to the <a style="color: white !important; text-decoration: underline;" href="tos" target="_blank">terms of service</a>.</p>
+    <input type="submit" name="submit" value="Submit" class="btn btn-lg btn-block login-button">
+    <div id="registerFailure" class="alert alert-danger failurealert" role="alert">
+      User with the same username or the same email exists already!
+    </div>
+    <div id="captchaFailure" class="alert alert-danger failurealert" role="alert">
+      You must complete the captcha!
+    </div>
+    <div id="passwordFailure" class="alert alert-danger failurealert" role="alert">
+      <strong>Your password isn't strong enough!</strong><br>
+      <span id="passwordWarning"></span>
+      <span id="passwordSuggestions"></span>
+    </div>
+  </form>
+  <p class="footer"> Copyright &copy; 2017 The Terrain</p>
+</div>

@@ -1,0 +1,32 @@
+{
+  "name": "theterrain",
+  "version": "0.0.1",
+  "description": "A site made for an Arma 3 modding community. Right now the functionality isn't finished so it's more of a demo than anything else.",
+  "main": "server.js",
+  "license": "",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "nedb": "^1.8.0",
+    "bcrypt": "^1.0.3",
+    "sanitize-html": "^1.17.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "nedb-session-store": "^1.1.2",
+    "aes256": "^1.0.3"
+  },
+  "engines": {
+    "node": "6.9.1"
+  },
+  "repository": {
+    "url": "https://github.com/kerkkoh/theterrain"
+  },
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+	"nedb"
+  ]
+}

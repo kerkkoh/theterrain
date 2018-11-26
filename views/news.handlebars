@@ -1,0 +1,32 @@
+    {{> utils/menu}}
+    <div class="container-fluid">
+      {{> utils/promo}}
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="nav flex-column nav-pills mt-2 mb-2" role="tablist" aria-orientation="vertical">
+            {{#each articles}}
+              {{#if this.current}}
+                <a class="nav-link active" href="/news/{{this._id}}" role="tab">{{this.title}}</a>
+              {{else}}
+                <a class="nav-link" href="/news/{{this._id}}" role="tab">{{this.title}}</a>
+              {{/if}}
+            {{/each}}
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-9">
+          <div class="row">
+            <div class="col-12 articletop">
+                <h2 class="articleheading">{{article_data.title}}</h2>
+                <p class="articlemetatext d-none d-sm-block">Author: <a href="/profile/{{article_data.author}}">{{authorname}}</a></p><br>
+                <p class="articlemetatext d-none d-sm-block">Date: {{article_data.date}}</p>
+                <h4 class="articledesc">{{article_data.description}}</h4>
+            </div>
+            <div class="col-12 articlemain">
+              {{{article_data.content}}}
+            </div>
+            <div class="articlebottom col-12 d-block d-sm-none">
+                <p>Author: <a href="/profile/{{article_data.author}}">{{authorname}}</a> &nbsp; &nbsp; &nbsp; Date: {{article_data.date}}</p>
+            </div>
+          </div>
+        </div>
+      </div>

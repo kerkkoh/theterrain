@@ -1,0 +1,16 @@
+<div class="head-login"><h1 class="text-center resetpadmarg">Login</h1></div>
+<div class="main-login">
+  <form id="logi" method="post" role="form">
+    <input type="text" name="username" class="form-control form-top" placeholder="Username" id="login-username" required>
+    <input type="password" name="password" class="form-control form-bottom" placeholder="Password" id="login-password" required>
+    <div id="loginCaptcha" class="g-recaptcha mb-3" data-sitekey="6LdBjzcUAAAAAGke9LPZps3hi8eUvv-yA5468Yma"></div>
+    <button class="btn btn-lg btn-block login-button" type="submit">Login</button>
+    <div id="loginFailure" class="alert alert-danger failurealert" role="alert">
+      Wrong login details!
+    </div>
+    <div id="captchaFailure" class="alert alert-danger failurealert" role="alert">
+      You must complete the captcha!
+    </div>
+  </form>
+  <p class="footer"> Copyright &copy; 2017 The Terrain</p>
+</div>
